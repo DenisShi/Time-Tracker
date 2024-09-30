@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input[type="time"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.2s ease;
+}
+
+input[type="time"]:focus {
+    border-color: #007aff;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#weekly-summary {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0; /* Light border for subtle definition */
+}
+
+#weekly-summary h2 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #007aff; /* Apple-like blue color */
+    font-weight: 600; /* Slightly bolder for emphasis */
+    border-bottom: 2px solid #007aff; /* Underline for header */
+    padding-bottom: 10px; /* Spacing below header */
+}
+
+.day-summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0; /* Subtle divider between days */
+    transition: background-color 0.2s ease; /* Transition for hover effect */
+}
+
+.day-summary:hover {
+    background-color: #f9f9f9; /* Light background on hover */
+}
+
+.day-summary:last-child {
+    border-bottom: none; /* No border on the last day */
+}
+
+.time {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right; /* Aligning time to the right for a cleaner look */
+}
+
+.overtime {
+    color: green;
+}
+
+.undertime {
+    color: red;
+}
+
+
+.weekend {
+    opacity: 0.6;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Tracker</h1>
+        <form id="time-form">
+            <label for="arrival-time">Arrival Time:</label>
+            <input type="time" id="arrival-time" required>
+            
+            <label for="departure-time">Departure Time:</label>
+            <input type="time" id="departure-time" required>
+            
+            <button type="submit">Record Time</button>
+        </form>
+        
+        <div id="result"></div>
+        
+        <div id="weekly-summary">
+            <h2>Weekly Summary</h2>
+            <div class="day-summary" id="monday">
+                <span>Monday:</span> <span class="time">0h 0m</span>
+            </div>
+            <div class="day-summary" id="tuesday">
+                <span>Tuesday:</span> <span class="time">0h 0m</span>
+            </div>
+            <div class="day-summary" id="wednesday">
+                <span>Wednesday:</span> <span class="time">0h 0m</span>
+            </div>
+            <div class="day-summary" id="thursday">
+                <span>Thursday:</span> <span class="time">0h 0m</span>
+            </div>
+            <div class="day-summary" id="friday">
+                <span>Friday:</span> <span class="time">0h 0m</span>
+            </div>
+            <div class="day-summary weekend" id="saturday" style="display:none;">
+                <span>Saturday:</span> <span class="time">N/A</span>
+            </div>
+            <div class="day-summary weekend" id="sunday" style="display:none;">
+                <span>Sunday:</span> <span class="time">N/A</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
