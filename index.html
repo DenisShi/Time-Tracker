@@ -9,15 +9,24 @@
 <body>
     <div class="container">
         <h1>Time Tracker</h1>
-        <form id="time-form">
+        
+        <form id="arrival-form">
             <label for="arrival-time">Arrival Time:</label>
             <input type="time" id="arrival-time" required>
-            
+            <span id="arrival-current">Current: None</span>
+            <button type="submit">Save Arrival Time</button>
+        </form>
+        
+        <form id="departure-form">
             <label for="departure-time">Departure Time:</label>
             <input type="time" id="departure-time" required>
-            
-            <button type="submit">Record Time</button>
+            <span id="departure-current">Current: None</span>
+            <button type="submit">Save Departure Time</button>
         </form>
+        
+        <div id="result"></div>
+        
+        
         
         <div id="result"></div>
         
